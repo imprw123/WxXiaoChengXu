@@ -1,0 +1,23 @@
+<view class="phoneBox">
+  <view class="RowBox">
+    <view class="row">
+      <view class="phoneNumber">
+        <text class="telName">手机号</text>
+        <input placeholder="请输入正确手机号" bindinput="getSearchInput"></input>
+      </view>
+    </view>
+     <view wx:if="{{flag}}" class="errorTip">{{tip}}</view>
+  </view>
+
+  <view class="RowBox">
+    <view class="row code">
+      <view class="phoneNumber Code">
+        <text class="telName">验证码</text>
+        <input placeholder="请输入验证码" bindinput="getCodeInput"></input>
+      </view>
+    </view>
+    <button class="getCode" disabled="{{isDisable}}" bindtap="requestCode">{{btnVal}}</button>
+  </view>
+  
+  <button class="sure" bindtap="_TelBindMobile">确定绑定</button>
+</view>

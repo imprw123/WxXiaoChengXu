@@ -1,0 +1,95 @@
+.detail{
+  padding-top: 30rpx;
+  padding-bottom: 40rpx;
+}
+.giftsDetail{
+  width:680rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+  margin: 0 auto;
+}
+.giftsDetail image {
+   width:680rpx;
+  height: 300rpx;
+   border-radius: 10rpx;
+}
+.integral{
+  width:660rpx;
+  margin: 0 auto;
+  margin-top:20rpx;
+}
+.integral .integral_num{
+  font-weight: bold;
+  color: #ab7f4b;
+}
+.giftsName{
+  margin-top:10rpx;
+  font-size: 30rpx;
+}
+.xian{
+  width:100%;
+  height:10rpx;
+  background: #eeeeee;
+}
+.indetail{
+  width:680rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+.indetail .title{
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.indetail .ctx{
+  font-size: 20px;
+  color: #999;
+  font-weight: normal;
+}
+.jisuan{
+  float: left;
+}
+.payFor{
+   width:222rpx;
+  height: 65rpx;
+  line-height:65rpx;
+  text-align: center;
+  background: #ceb178;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #fff;
+   float: right;
+}
+.nohas{
+   width:222rpx;
+  height: 65rpx;
+  line-height:65rpx;
+  text-align: center;
+  background: #5a5c6a;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #fff;
+   float: right;
+}
+.haslq{
+   width:222rpx;
+  height: 65rpx;
+  line-height:65rpx;
+  text-align: center;
+  background: #5a5c6a;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #fff;
+   float: right;
+}
+.pay{
+  width:680rpx;
+  margin:0 auto;
+  margin-top: 20rpx;
+}
+.pay .jisuan{
+  color:#ff0000;
+  font-size:36rpx;
+  height: 65rpx;
+  line-height: 65rpx;
+}

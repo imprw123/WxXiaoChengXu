@@ -1,0 +1,24 @@
+<view class="rpgGiftsBox">
+  <block wx:for="{{giftslists}}" wx:key="{{index}}">
+    <navigator url="/pages/rpg/rpgDetail/rpgdetail?pt={{item.privilege_type}}&id={{item.id}}" open-type="navigate">
+      <view class="in_rpgGiftsBox">
+        <view class="imgProduct">
+          <image src="{{item.M_ITEM.b_img}}"></image>
+        </view>
+        <view class="productInfor">
+          <view class="giftsName">{{item.M_ITEM.name}}</view>
+          <view class="shuoming">{{item.M_ITEM.constraint}}</view>
+          <view>
+            <view class="bklq" wx:if="{{item.M_ITEM.rcv_flg == -1}}">{{item.M_ITEM.privilege_type == 3? '不可兑换':'不可领取'}}</view>
+            <view class="ljlq" wx:if="{{item.M_ITEM.rcv_flg == 0}}">{{item.M_ITEM.privilege_type == 3? '立即兑换':'立即领取'}}</view>
+
+            <view class="ylq" wx:if="{{item.M_ITEM.rcv_flg == 1}}">{{item.M_ITEM.privilege_type == 3? '已兑换':'已领取'}}</view>
+            <view class="num">
+              <text>{{item.M_ITEM.total >=0 ? item.M_ITEM.total:'不限量'}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>

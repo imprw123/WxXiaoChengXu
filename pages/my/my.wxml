@@ -1,0 +1,134 @@
+<wxs module="dateUtil" src="../../filter.wxs"></wxs>
+<view>
+  <view class="inMyBox">
+    <view class="inMyBoxMain">
+      <view class="inload" wx:if="{{islogin}}">
+      <text class="exit" bindtap="exit">退出</text>
+        <view class="useTx">
+          <image src="../images/leve0.png" wx:if="{{k_level == 0}}" class="leveBg"></image>
+          <image src="../images/notleve0.png" wx:if="{{k_level > 0}}" class="leveBg"></image>
+          <image src="{{icon}}" class="tx"></image>
+        </view>
+        <view class="name">{{user_name}}</view>
+        <view class="leveBox">
+          <view class="leve01" wx:if="{{k_level == 1}}">
+            <image src="../images/1.png"></image>
+          </view>
+          <view class="leve01" wx:if="{{k_level == 2}}">
+            <image src="../images/2.png"></image>
+          </view>
+          <view class="leve01" wx:if="{{k_level == 3}}">
+            <image src="../images/3.png"></image>
+          </view>
+          <view class="leve01" wx:if="{{k_level == 4}}">
+            <image src="../images/4.png"></image>
+          </view>
+          <view class="leve01" wx:if="{{k_level == 5}}">
+            <image src="../images/5.png"></image>
+          </view>
+          <view class="leve01" wx:if="{{k_level == 6}}">
+            <image src="../images/6.png"></image>
+          </view>
+        </view>
+      </view>
+
+      <view class="unload" wx:if="{{!islogin}}">
+        <button bindtap="login">登录</button>
+      </view>
+      <!-- 日期选择器 -->
+      <view class="tui-picker-content" wx:if="{{birthday == '' || birthday == null && islogin}}">
+        <picker mode="date" value="{{date}}" start="1949-10-01" end="2020-10-01" bindchange="changeDate">
+
+          <view class="tui-picker-detail">
+            <text class="birthday"></text> 设置我的生日: {{date}}
+          </view>
+        </picker>
+      </view>
+
+      <view class="tui-picker-content" wx:if="{{birthday !='' && birthday !=null && islogin}}">
+        <text class="birthday"></text>
+        <text>{{birthday}}</text>
+      </view>
+      <!-- 日期选择器 -->
+    </view>
+  </view>
+  <view class="myTab">
+    <view class="inTab">
+      <navigator url="/pages/mykk/mykk" open-type="navigate">
+        <view>{{k_value}}</view>
+        <view>我的k值</view>
+        <view class="xian"></view>
+      </navigator>
+    </view>
+
+    <view class="inTab">
+      <navigator url="/pages/myYaoDou/myyaodou" open-type="navigate">
+        <view>{{yd_value}}</view>
+        <view>我的妖豆</view>
+        <view class="xian"></view>
+      </navigator>
+    </view>
+
+    <view class="inTab">
+      <view wx:if="{{mobile != 0 && mobile != '' && islogin != ''}}">
+        <view>{{dateUtil.phoneNumber(mobile)}}</view>
+        <view>已绑定</view>
+      </view>
+
+      <view wx:if="{{mobile == 0 || mobile == '' || islogin == ''}}">
+        <navigator url="/pages/bindPhone/bindphone" open-type="navigate">
+          <view>****</view>
+          <view>绑定手机</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="activePage">
+    <view class="actBox">
+      <navigator url="/pages/yhq/yhq" open-type="navigate">
+        <image class="bgImg" src="../images/card.png"></image>
+        <text>我的优惠券</text>
+      </navigator>
+    </view>
+    <view class="actBox">
+      <navigator url="/pages/myGiftBag/mygiftbag" open-type="navigate">
+        <image class="bgImg giftbag" src="../images/order.png"></image>
+        <text>我的礼包</text>
+      </navigator>
+    </view>
+    <view class="actBox" bindtap="showModal">
+      <image class="bgImg bgImg01" src="../images/zhangcheng.png"></image>
+      <text>妖妖KING细则</text>
+    </view>
+    <!-- <view class="actBox">
+     
+        <image class="bgImg bgImg02" src="../images/focus.png"></image>
+        <text>关注公众号</text>
+
+    </view> -->
+    <!-- <view class="actBox">
+      <image class="bgImg bgImg03" src="../images/11app.png"></image>
+      <text>11对战平台APP</text>
+    </view> -->
+    <view class="actBox" style="margin-bottom:0rpx;">
+      <image class="bgImg bgImg04" src="../images/link.png"></image>
+      <text bindtap="freeTell">联系我们</text>
+    </view>
+  </view>
+</view>
+<modal title="妖妖KING细则" hidden="{{modalHidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
+  <view>1.妖妖KING等级对照表</view>
+  <view>K1 100000 K值</view>
+  <view>K2 500000 K值</view>
+  <view>K3 1500000 K值</view>
+  <view>K4 5000000 K值</view>
+  <view>K5 10000000 K值</view>
+  <view>K6 20000000 K值</view>
+  <view>2.每消费1RMB=100K值，在11平台进行消费的账号均可累计K值，有特殊说明的除外</view>
+  <view>3.KING值有效期为365天，如您在2019年12月6日消费1元获得100K值，则该K值会365天后失效（具体变化可在会员中心查看K值记录）</view>
+  <view>4.KING会员可领取对应等级的福利及礼包（详情见会员中心，依实际情况调整）</view>
+  <view>5.不同等级KING会员，兑换部分礼包时，所享受的折扣价格不同</view>
+  <view>6.KING会员可在会员中心设置生日，每年生日月可领取生日礼包，生日仅可设置一次</view>
+  <view>7.KING会员等级在本账号累计，不可转让</view>
+  <view>8.如使用赠送功能，则赠送者账号增加对应K值，被赠送者不可增加</view>
+</modal>

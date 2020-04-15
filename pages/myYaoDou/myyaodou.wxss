@@ -1,0 +1,110 @@
+/* pages/myYaoDou/myyaodou.wxss */
+
+page {
+  background: #eee;
+}
+
+.myInfor {
+  width: 680rpx;
+  height: 300rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  padding-top: 30rpx;
+}
+
+.myInfor .tx {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: block;
+}
+
+.myInfor .name {
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+  margin-top: 12rpx;
+}
+
+.ydNumber {
+  width: 100%;
+  text-align: center;
+  font-size: 22rpx;
+  color: #aa7f4b;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin: 12rpx 0px;
+}
+
+.ydNumber .ydIcon {
+  width: 32rpx;
+  height: 34rpx;
+  background: url(https://img.5211game.com/5211/Act/2020/yykingWx/images/yaoIcon.png);
+  display: inline-block;
+  background-size: cover;
+  position: relative;
+  top: 6rpx;
+  margin-right: 5rpx;
+}
+
+.ydInfor {
+  text-align: center;
+  width: 100%;
+  font-size: 22rpx;
+  color: #aa7f4b;
+}
+
+.siginRecord {
+  width: 680rpx;
+  min-height: 300rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+}
+
+.siginRecord .title {
+  text-align: center;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #8a8a8a;
+  margin-bottom: 20rpx;
+}
+
+.recordLists {
+  margin-left: 120rpx;
+  border-left: 2rpx solid #dadada;
+  padding-left: 20rpx;
+  font-size: 22rpx;
+  color: #8a8a8a;
+  position: relative;
+}
+
+.rd {
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #dadada;
+  position: absolute;
+  top: -4rpx;
+  left: -10rpx;
+  border-radius: 50%;
+}
+
+.recordInfor view {
+  margin-bottom: 15rpx;
+}
+
+.recordInfor .cl {
+  color: #aa7f4b;
+}
+.recordLists .timer{
+  position: absolute;
+  left: -112rpx;
+  top:-10rpx;
+}

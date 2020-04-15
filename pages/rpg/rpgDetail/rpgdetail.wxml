@@ -1,0 +1,34 @@
+<view class="detail">
+  <view class="giftsDetail">
+      <image src="{{b_img}}" mode="scaleToFill"></image>
+  </view>
+  <view class="integral">
+      <view class="integral_num"></view>
+      <view class="giftsName">{{show_name}}</view>
+  </view>
+</view>
+ <view class="xian"></view>
+ <view class="detail">
+    <view class="indetail">
+      <view class="title">礼包内容</view>
+      <view class="ctx">{{show_desc}}</view>
+    </view>
+
+     <view class="indetail">
+      <view class="title">兑换条件</view>
+      <view class="ctx">{{constraint}}</view>
+    </view>
+
+     <view class="indetail">
+      <view class="title">使用方法</view>
+      <view class="ctx" wx:if="{{pt == 2 || pt == 3}}">领取成功后直接放入背包，请前往背包对应分类查看</view>
+       <view class="ctx"  wx:if="{{pt == 1}}">领取成功后，可在我——我的礼包查看，请前往平台背包兑换，点击左下角蓝色图标（背包）——CDKey兑换</view>
+    </view>
+  </view>
+   <view class="xian"></view>
+   <view class="pay">
+    <view class="jisuan" wx:if="{{pt == 3}}"><text>消耗:</text><text>{{yd}}</text>妖豆</view>
+    <view class="payFor" wx:if="{{rcv_flg == 0}}" bindtap="_RcvPkg">{{pt == 3? '立即兑换':'立即领取'}}</view>
+     <view class="nohas" wx:if="{{rcv_flg == -1}}" bindtap="_RcvPkg">{{pt == 3 ?'不可兑换':'不可领取'}}</view>
+      <view class="haslq" wx:if="{{rcv_flg == 1}}" bindtap="_RcvPkg">{{pt == 3 ?'已兑换':'已领取'}}</view>
+   </view>

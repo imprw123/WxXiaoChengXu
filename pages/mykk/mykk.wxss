@@ -1,0 +1,52 @@
+
+.siginRecord {
+  width: 680rpx;
+  min-height: 300rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+}
+
+.siginRecord .title {
+  text-align: center;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #8a8a8a;
+  margin-bottom: 20rpx;
+}
+
+.recordLists {
+  margin-left: 120rpx;
+  border-left: 2rpx solid #dadada;
+  padding-left: 20rpx;
+  font-size: 22rpx;
+  color: #8a8a8a;
+  position: relative;
+}
+
+.rd {
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #dadada;
+  position: absolute;
+  top: -4rpx;
+  left: -10rpx;
+  border-radius: 50%;
+}
+
+.recordInfor view {
+  margin-bottom: 15rpx;
+}
+
+.recordInfor .cl {
+  color: #aa7f4b;
+}
+.recordLists .timer{
+  position: absolute;
+  left: -112rpx;
+  top:-10rpx;
+}

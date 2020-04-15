@@ -1,0 +1,142 @@
+/* pages/yd/yd.wxss */
+
+.ydHd {
+  width: 100%;
+  height: 250rpx;
+  background-color: #1e1e1e;
+}
+
+.ydnumber {
+  font-size: 50rpx;
+  color: #c1975c;
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 30rpx;
+}
+
+.sign {
+  width: 180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #c1975c;
+  text-align: center;
+  border-radius: 8rpx;
+  margin: 0 auto;
+}
+.haSsign{
+  width: 180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  margin: 0 auto;
+  background-color: #ccc;
+  color: #999;
+}
+
+.tip {
+  width: 100%;
+  color: #fff;
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+page {
+  background-color: #eee;
+}
+
+.tabBox {
+  width: 680rpx;
+  height: 120rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  border-radius: 8rpx;
+  display: flex;
+  padding: 20rpx 0px;
+}
+
+.tabBox .tab {
+  flex: 1;
+  font-size: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  position: relative;
+}
+
+.tabBox .tab .xian {
+  width: 4rpx;
+  height: 80rpx;
+  background-color: #c1975c;
+  display: block;
+  position: absolute;
+  top: 20rpx;
+  right: 0rpx;
+}
+
+.quanBox {
+  margin: 0 auto;
+  margin-top: 90rpx;
+  display: flex;
+  width:100%;
+}
+
+.quanBox .sale {
+  width: 198rpx;
+  height: 198rpx;
+  flex: 1;
+  padding-left: 60rpx;
+  text-align: center;
+}
+
+.quanBox .sale image {
+  width: 198rpx;
+  height: 198rpx;
+}
+
+.quanBox .mj {
+  width: 198rpx;
+  height: 198rpx;
+  padding-right: 60rpx;
+  text-align: center;
+  flex: 1;
+}
+
+.quanBox .mj image {
+  width: 198rpx;
+  height: 198rpx;
+}
+
+
+.quanBox .td {
+  width: 198rpx;
+  height: 198rpx;
+  padding-left: 60rpx;
+  text-align: center;
+  flex: 1;
+}
+
+.quanBox .td image {
+  width: 198rpx;
+  height: 198rpx;
+}
+
+.quanBox .qd {
+  width: 198rpx;
+  height: 198rpx;
+  padding-right: 60rpx;
+  text-align: center;
+  flex: 1;
+}
+
+.quanBox .qd image {
+  width: 198rpx;
+  height: 198rpx;
+}
+

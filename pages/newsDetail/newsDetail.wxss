@@ -1,0 +1,25 @@
+/* pages/newsDetail/newsDetail.wxss */
+.newContainer{
+  width:600rpx;
+  padding: 0 30rpx;
+  margin: 0 auto;
+}
+.titleName{
+  font-size:32rpx;
+  height: 100rpx;
+  line-height:100rpx;
+  width:100%;
+  font-weight: bold;
+  text-align: center;
+}
+.name{
+  font-size: 24rpx;
+  color: #666;
+  width:100%;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.newsBox{
+  text-align: center;
+  font-size: 24rpx;
+}

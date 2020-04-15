@@ -1,0 +1,62 @@
+<!--index.wxml-->
+
+<wxs module="dateUtil" src="../../filter.wxs"></wxs>
+<swiper class="swiper" circular="true" autoplay="true" interval="3000" indicator-dots="true" indicator-active-color="#fff">
+  <block wx:for="{{banners}}" wx:key="{{index}}">
+    <swiper-item>
+    <navigator url="{{item.url}}" open-type="navigate">
+      <image src="{{item.img}}" class="img"></image>
+       </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="recommendList">
+
+
+  <view class="view-item">
+    <navigator url="/pages/rpg/Gifts/gifts" open-type="navigate">
+      <image src="../../pages/images/libao.png"></image>
+      <view class="textkey">游戏礼包</view>
+    </navigator>
+  </view>
+
+
+
+  <view class="view-item">
+    <navigator url="/pages/vip/vip" open-type="navigate">
+      <image src="../../pages/images/jierifuli.png"></image>
+      <view class="textkey">会员福利</view>
+    </navigator>
+  </view>
+
+
+  <view class="view-item" bindtap="errorTip">
+      <image src="../../pages/images/youhuiquan.png"></image>
+      <view class="textkey">优惠券</view>
+  </view>
+  <view class="view-item">
+    <navigator url="/pages/active/active" open-type="navigate">
+      <image src="../../pages/images/huodong.png"></image>
+      <view class="textkey">热门活动</view>
+    </navigator>
+  </view>
+
+</view>
+
+<view class="newTitle">
+  <view class="left"></view>新闻中心
+  <view class="right"></view>
+</view>
+
+<view class="newsContent">
+  <block wx:for="{{newsList}}" wx:key="{{index}}">
+  <navigator url="/pages/newsDetail/newsDetail?News_Id={{item.News_Id}}" open-type="navigate">
+     <view class="in_newContent">
+      <text class="btnBg">{{item.Category_Name}}</text>
+      <text class="itemText">{{item.News_Title}}</text>
+      <text>{{dateUtil.myDateFilter(item.AddDate)}}</text>
+    </view>
+  </navigator>
+  </block>
+</view>

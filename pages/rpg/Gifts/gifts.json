@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+    "navigationBarBackgroundColor": "#1e1e1e",
+    "navigationBarTitleText": "礼包领取",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true,
+    "backgroundTextStyle":"dark"
+}

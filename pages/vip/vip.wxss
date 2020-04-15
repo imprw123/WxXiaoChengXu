@@ -1,0 +1,153 @@
+.swiperBox {
+  margin-top: 20rpx;
+  overflow: hidden;
+  zoom: 1;
+  padding: 0 30rpx;
+}
+
+.swiper-tab {
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.swiper-tab-item {
+  flex: 1;
+  color: #000;
+  font-size: 26rpx;
+}
+
+.active {
+  color: #ffc257;
+  border-bottom: 2rpx solid #ffc257;
+  font-weight: bold;
+}
+
+swiper {
+  text-align: center;
+  overflow: hidden;
+  zoom: 1;
+}
+.in_rpgGiftsBox {
+  overflow: hidden;
+  zoom: 1;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom:20rpx;
+  margin-bottom:20rpx;
+}
+
+.imgProduct {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.imgProduct image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 8rpx;
+}
+
+.productInfor {
+  width: 510rpx;
+  float: left;
+  padding-left: 20rpx;
+}
+
+.giftsName {
+  font-size: 32rpx;
+  color: #826532;
+  margin-bottom: 15rpx;
+}
+
+.shuoming {
+  font-size: 24rpx;
+  color: #b9b9b9;
+  margin-bottom: 15rpx;
+}
+
+.bklq {
+  width: 142rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #5a5c6a;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.ljlq {
+  width: 142rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #ceb178;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.ylq {
+  width: 142rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #5a5c6a;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.num {
+  float: left;
+  font-size: 24rpx;
+  color: #ccc;
+  margin-bottom: 15rpx;
+}
+
+.bklq {
+  width: 120rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 4rpx;
+  background-color: #a5a4a4;
+  font-size: 20rpx;
+  float: left;
+}
+
+.ylq {
+  width: 120rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 4rpx;
+  background-color: #a5a4a4;
+  font-size: 20rpx;
+  float: left;
+}
+
+.ljlq {
+  width: 120rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 4rpx;
+  font-size: 20rpx;
+  background-color: #f5d62a;
+  float: left;
+}
+
+.remaind {
+  font-size: 24rpx;
+  color: #ccc;
+  float: left;
+  margin-left: 10rpx;
+}

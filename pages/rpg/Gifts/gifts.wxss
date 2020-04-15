@@ -1,0 +1,78 @@
+.rpgGiftsBox{
+  width:680rpx;
+  margin:0 auto;
+  margin-top: 20rpx;
+}
+.in_rpgGiftsBox{
+  width:680rpx;
+  height: 179rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  margin-bottom: 30rpx;
+}
+.imgProduct{
+  float: left;
+  width:150rpx;
+  height: 150rpx;
+}
+.imgProduct image{
+   width:150rpx;
+  height: 150rpx;
+  border-radius: 8rpx;
+}
+.productInfor{
+  width:510rpx;
+  height: 150rpx;
+   float: left;
+   padding-left:20rpx;
+}
+.giftsName{
+  font-size:32rpx;
+  color: #826532;
+  margin-bottom:15rpx;
+}
+.shuoming{
+  font-size: 24rpx;
+  color: #b9b9b9;
+   margin-bottom:15rpx;
+}
+.bklq{
+ width:142rpx;
+  height: 50rpx;
+  line-height:50rpx;
+  text-align: center;
+  background: #5a5c6a;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #fff;
+  float: left;
+}
+.ljlq{
+  width:142rpx;
+  height: 50rpx;
+  line-height:50rpx;
+  text-align: center;
+  background: #ceb178;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #fff;
+   float: left;
+}
+.ylq{
+  width:142rpx;
+  height: 50rpx;
+  line-height:50rpx;
+  text-align: center;
+  background: #5a5c6a;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #fff;
+  float: left;
+}
+.num{
+  float: left;
+  height:24px;
+  line-height: 24px;
+ font-size: 24rpx;
+  color: #ccc;
+  margin-left: 15rpx;
+}

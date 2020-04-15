@@ -1,0 +1,92 @@
+.swiperBox{
+margin-top: 20rpx;
+overflow: hidden;
+zoom:1;
+
+}
+.swiper-tab{
+  padding:0 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  text-align: center;  
+  padding-bottom: 10rpx;
+}
+.xian{
+  height: 15rpx;
+  width: 100%;
+  background-color:#eee;
+  margin-bottom: 20rpx;
+}
+.swiper-tab-item{
+  flex:1;
+  color: #000;
+  font-size: 26rpx;
+}
+.active{
+  color: #ffc257;
+  border-bottom: 2rpx solid #ffc257;
+  font-weight: bold;
+}
+swiper{
+  text-align: center;
+  overflow: hidden;
+  zoom:1;
+}
+.giftRecordBox{
+  width:680rpx;
+  margin: 0 auto;
+}
+.lists{
+  width:680rpx;
+  overflow: hidden;
+  zoom:1;
+  margin:0 auto;
+  padding-bottom: 20rpx;
+  border-bottom: 1px dashed #eee;
+}
+.lists .giftRecordleft{
+  float: left;
+  width:160rpx;
+  height: 160rpx;
+}
+.lists .giftRecordleft image{
+  width:160rpx;
+  height: 160rpx;
+  border-radius: 8rpx;
+}
+.giftRecordright{
+  width:505rpx;
+  float: left;
+  padding-left: 15rpx;
+position: relative;
+}
+.giftRecordright .ptName{
+  font-size: 26rpx;
+  color: #826532;
+}
+.giftRow{
+  font-size: 22rpx;
+  color: #b9b9b9;
+  margin-top: 10rpx;
+}
+.yhBox{
+  width:680rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+.cdk{
+  position: absolute;
+  top:0px;
+  right:0px;
+  background-color: #d5b47e;
+  width:120rpx;
+  height: 40rpx;
+  color: #fff;
+  font-size: 22rpx;
+  border-radius: 4rpx;
+  text-align: center;
+  line-height: 40rpx;
+}

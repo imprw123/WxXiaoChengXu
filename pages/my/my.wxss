@@ -1,0 +1,164 @@
+.inMyBox{
+  width:100%;
+  height: 340rpx;
+  background-color: #1e1e1e;
+  position: relative;
+  margin-bottom:90rpx;
+}
+.inMyBoxMain{
+    width: 680rpx;
+    height:360rpx;
+    background-color: #fff;
+    border-radius:16rpx;
+    position: absolute;
+    top:50rpx;
+    left: 50%;
+    margin-left: -340rpx;
+}
+page {
+  background-color: #eee;
+}
+.useTx{
+  width:140rpx;
+  height: 140rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  text-align: center;
+   margin-bottom:15rpx;
+  position: relative;
+}
+.useTx .tx{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.leveBox{
+  overflow:hidden;
+  zoom: 1;
+  margin-bottom:15rpx;
+}
+.name{
+  color: #000;
+  font-weight: bold;
+  font-size: 24rpx;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15rpx;
+}
+.myTab{
+  width:680rpx;
+  height: 140rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius:16rpx;
+  display: flex;
+  
+}
+
+.inTab{
+  flex: 1;
+  text-align: center;
+  font-size: 22rpx;
+  height: 140rpx;
+  position:relative;
+}
+.myTab .inTab .xian{
+  width:2rpx;
+  height: 80rpx;
+  background-color: #eee;
+  position: absolute;
+  top:50%;
+  margin-top: -40rpx;
+  right:0rpx;
+}
+.inTab view{
+  height: 70rpx;
+  line-height:70rpx;
+}
+.activePage{
+    width: 640rpx;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius:16rpx;
+    margin-top:20rpx;
+    padding: 20rpx;
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: 20rpx;
+}
+.activePage .actBox{
+  font-size: 28rpx;
+  margin-bottom:40rpx;
+  padding:10rpx 0px;
+}
+.bgImg{
+  width:31rpx;
+  height:31rpx;
+  display: inline-block;
+  margin-right: 12rpx;
+}
+.giftbag{
+  width:27rpx;
+  height:31rpx;
+}
+.bgImg01{
+   width:29rpx;
+  height:31rpx;
+}
+.bgImg02{
+   width:32rpx;
+  height:31rpx;
+}
+.bgImg03{
+  width:28rpx;
+  height:31rpx;
+}
+.bgImg04{
+  width:29rpx;
+  height:29rpx;
+}
+.leve01 image{
+  width:90rpx;
+  height: 20rpx; 
+  margin:0 auto;
+  display: block;
+}
+.leveBg{
+  width:68rpx;
+  height: 50rpx;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  margin-left: -34rpx;
+}
+
+.unload{
+  width:200rpx;
+  margin: 0 auto;
+  margin-top: 100rpx;
+}
+.unload button{
+  background-color:#d5b47e;
+  color: #fff; 
+}
+.tui-picker-content{
+  width: 100%;
+  text-align: center;
+  font-size: 22rpx;
+}
+.birthday{
+  display: inline-block;
+  width:21rpx;
+  height: 22rpx;
+  background: url(https://img.5211game.com/5211/Act/2020/yykingWx/images/brithday.png);
+  background-size: cover;
+  position: relative;
+  top:2rpx;
+  margin-right:5px;
+}
+.exit{
+  font-size: 24rpx;
+  position: absolute;
+  top:40rpx;
+  right:40rpx;
+}

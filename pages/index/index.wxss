@@ -1,0 +1,93 @@
+/**index.wxss**/
+.recommendList{
+  display: flex;
+  margin-top: 40rpx;
+  padding: 0 30rpx;
+}
+.swiper{
+  height:420rpx;
+}
+.swiper .img{
+  height:420rpx;
+  width:100%;
+}
+.view-item{
+  flex: 1;
+  text-align: center;
+}
+.view-item image{
+  width:120rpx;
+  height: 159rpx;
+}
+.view-item .textkey{
+    font-size:28rpx;
+    color:#826532;
+}
+.newTitle{
+ text-align: center;
+margin-top: 46rpx;
+font-size: 35rpx;
+color: #000;
+position: relative;
+font-weight: bold;
+margin-bottom: 30rpx;
+
+}
+.newTitle .left{
+  width:200rpx;
+  height: 2px;
+  background:#333333;
+  display: block;
+  position: absolute;
+  top:30rpx;
+  left: 50%;
+  margin-left:-300rpx;
+}
+.newTitle .right{
+  width:200rpx;
+  height: 2px;
+  background:#333333;
+  display: block;
+   position: absolute;
+  top:30rpx;
+  left: 50%;
+  margin-left:95rpx;
+}
+.newsContent{
+  margin: 0 auto;
+  margin-top: 22rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #3b3b3b;
+
+}
+.in_newContent{
+  margin: 0 auto;
+   padding: 0 30rpx;
+   overflow: hidden;
+   zoom:1;
+   width:600rpx;
+    margin-bottom: 30rpx;
+}
+.in_newContent .btnBg{
+  background-color: #f9d179;
+  border-radius:4rpx;
+
+
+}
+.in_newContent text{
+  width:100rpx;
+  height:44rpx;
+  line-height: 44rpx;
+  float: left;
+   font-size:22rpx;
+}
+.in_newContent .itemText{
+   width:380rpx;
+  height:50rpx;
+  display: inline-block;
+  overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+  font-size:22rpx;
+  text-align: left;
+  margin: 0 10rpx;
+}

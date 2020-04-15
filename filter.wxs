@@ -1,0 +1,54 @@
+var myDateFilter=function (timestamp) {
+  var date = getDate(
+    parseInt(timestamp.replace("/Date(", "").replace(")/", ""), 10)
+  );
+  var Y = date.getFullYear() + "-";
+  var M =
+    (date.getMonth() + 1 < 10 ?
+      "0" + (date.getMonth() + 1) :
+      date.getMonth() + 1) + "";
+  var D =
+    (date.getDate() < 10 ? "0" + date.getDate() : date.getDate()) + " ";
+  var h =
+    (date.getHours() < 10 ? "0" + date.getHours() : date.getHours()) + ":";
+  var m =
+    (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()) +
+    ":";
+  var s =
+    date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+  return Y + M
+
+};
+
+var myDateFilter2 = function (timestamp) {
+  var date = getDate(
+    parseInt(timestamp.replace("/Date(", "").replace(")/", ""), 10)
+  );
+  var Y = date.getFullYear() + "-";
+  var M =
+    (date.getMonth() + 1 < 10 ?
+      "0" + (date.getMonth() + 1) :
+      date.getMonth() + 1) + "-";
+  var D =
+    (date.getDate() < 10 ? "0" + date.getDate() : date.getDate()) + " ";
+  var h =
+    (date.getHours() < 10 ? "0" + date.getHours() : date.getHours()) + ":";
+  var m =
+    (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()) +
+    "";
+  var s =
+    date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+  return Y + M+D+h+m;
+
+};
+var phoneNumber = function (mobileNum){
+  if (!mobileNum) return false;
+  var mphone = mobileNum.substring(0, 3) + '****' + mobileNum.substring(7);
+  return mphone;
+}
+
+module.exports ={
+  myDateFilter: myDateFilter,
+  myDateFilter2: myDateFilter2,
+  phoneNumber: phoneNumber
+}

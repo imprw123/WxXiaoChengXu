@@ -1,0 +1,42 @@
+<view class="dota">
+  <view class="title">本周试用</view>
+  <view class="imgShow ">
+    <image src="{{weekFree.b_img}}"></image>
+  </view>
+  <view class="imgInfor">
+    {{weekFree.name}}
+  </view>
+  <view class="bklq" style="margin:0 auto;margin-bottom:10px;" wx:if="{{weekFree.rcv_flg == -1}}" data-id="{{weekFree.id}}" data-ptid="{{weekFree.privilege_type}}" bindtap="_RcvPkg">{{weekFree.privilege_type == 3? '不可兑换':'不可领取'}}</view>
+          <view class="ljlq" style="margin:0 auto;margin-bottom:10px;" wx:if="{{weekFree.rcv_flg == 0}}"  data-id="{{weekFree.id}}" data-ptid="{{weekFree.privilege_type}}" bindtap="_RcvPkg">{{weekFree.privilege_type == 3? '立即兑换':'立即领取'}}</view>
+          <view class="ylq" style="margin:0 auto;margin-bottom:10px;" wx:if="{{weekFree.rcv_flg == 1}}">{{weekFree.privilege_type == 3? '已兑换':'已领取'}}</view>
+  <view class="xiaohao">{{weekFree.constraint}}</view>
+  <view class="xiaohao">{{weekFree.desc}}</view>
+  <view class="limted">每周限兑一次</view>
+</view>
+<view class="xian"></view>
+
+<view class="rpgGiftsBox">
+  <view class="title">
+    <text>游戏道具</text>
+    <text>（每周限兑一次）</text>
+  </view>
+  <block wx:for="{{pkgLst}}" wx:key="{{index}}">
+
+    <view class="in_rpgGiftsBox">
+      <view class="imgProduct">
+        <image src="{{item.M_ITEM.b_img}}"></image>
+      </view>
+      <view class="productInfor">
+        <view class="giftsName">{{item.M_ITEM.name}}</view>
+        <view class="shuoming">{{item.M_ITEM.constraint}}</view>
+          <view class="shuoming">{{item.M_ITEM.desc}}</view>
+        <view>
+           <view class="bklq" wx:if="{{item.M_ITEM.rcv_flg == -1}}" data-id="{{item.M_ITEM.id}}" data-ptid="{{item.M_ITEM.privilege_type}}" bindtap="_RcvPkg">{{item.M_ITEM.privilege_type == 3? '不可兑换':'不可领取'}}</view>
+          <view class="ljlq" wx:if="{{item.M_ITEM.rcv_flg == 0}}"  data-id="{{item.M_ITEM.id}}" data-ptid="{{item.M_ITEM.privilege_type}}" bindtap="_RcvPkg">{{item.M_ITEM.privilege_type == 3? '立即兑换':'立即领取'}}</view>
+          <view class="ylq" wx:if="{{item.M_ITEM.rcv_flg == 1}}">{{item.M_ITEM.privilege_type == 3? '已兑换':'已领取'}}</view>
+        </view>
+      </view>
+    </view>
+
+  </block>
+</view>

@@ -1,0 +1,45 @@
+.box{
+  padding: 15rpx;
+}
+.rpgTitle{
+  font-size:32rpx;
+  width:680rpx;
+  margin: 0 auto;
+  margin-bottom:20rpx;
+}
+.inRpgList image.adcanceBanner{
+  width:680rpx;
+  height: 190rpx;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.rpgMapList{
+  height: 110rpx;
+  width:680rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+}
+.mapImg{
+  width:110rpx;
+  height:110rpx;
+  float: left;
+  border-radius: 10rpx;
+}
+.mapInfor{
+  width:550rpx;
+  height: 108rpx;
+   float: left;
+   border-bottom: 2rpx dashed #eeeeee;
+   padding-left: 20rpx;
+}
+.mapInfor .mapName{
+  font-size:28rpx;
+  color: #826532;
+  margin-bottom: 30rpx;
+}
+.typeName{
+  color:#b9b9b9;
+  font-size: 24rpx;
+}

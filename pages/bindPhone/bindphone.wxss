@@ -1,0 +1,77 @@
+/* pages/bindPhone/bindphone.wxss */
+
+.phoneBox {
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+}
+
+.phoneNumber {
+  width: 680rpx;
+  height: 60rpx;
+
+}
+
+.RowBox {
+  width: 682rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+  overflow:hidden;
+  zoom:1;
+  padding-bottom: 10rpx;
+}
+
+.row {
+  width: 680rpx;
+  height: 60rpx;
+    border: 1rpx solid #eee;
+  border-radius: 2rpx;
+}
+.code{
+  width:484rpx;
+  float: left;
+}
+.phoneNumber .telName {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 24rpx;
+  float: left;
+  border-right: 1px solid #eee;
+}
+
+.phoneNumber input {
+  width: 550rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: left;
+  font-size: 24rpx;
+  float: left;
+  padding-left: 10rpx;
+}
+
+.Code input {
+  width: 356rpx;
+  height: 60rpx;
+}
+.getCode{
+  width:196rpx;
+  height: 62rpx;
+  float: left;
+  font-size: 24rpx;
+}
+.sure{
+  width:200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #fff;
+  background-color:#d5b47e;
+  font-size: 26rpx;
+}
+.errorTip{
+  font-size: 22rpx;
+  color: red;
+  height: 40rpx;
+  line-height: 40rpx;
+}

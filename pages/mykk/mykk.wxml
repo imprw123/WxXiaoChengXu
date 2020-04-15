@@ -1,0 +1,13 @@
+ <wxs module="dateUtil" src="../../filter.wxs"></wxs>
+ <view class="siginRecord">
+    <view class="title">此处仅显示30天的妖豆变化</view>
+    <view class="recordLists" wx:for="{{kklists}}" wx:key="{{index}}">
+      <text class="timer">{{dateUtil.myDateFilter(item.create_time)}}</text>
+      <text class="rd"></text>
+      <view class="recordInfor">
+        <view class="cl">{{item.change_val>0? '+'+item.change_val:item.change_val}}</view>
+        <view class="cl">{{item.desc}}</view>
+        <view>{{dateUtil.myDateFilter2(item.create_time)}}</view>
+      </view>
+    </view>
+  </view>

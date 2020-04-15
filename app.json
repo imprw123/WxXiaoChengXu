@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/rpg/rpg",
+    "pages/yd/yd",
+    "pages/DOTA/dota",
+    "pages/my/my",
+    "pages/rpg/Gifts/gifts",
+    "pages/rpg/rpgDetail/rpgdetail",
+    "pages/vip/vip",
+    "pages/yhq/yhq",
+    "pages/newsDetail/newsDetail",
+    "pages/myGiftBag/mygiftbag",
+    "pages/myYaoDou/myyaodou",
+    "pages/mykk/mykk",
+    "pages/bindPhone/bindphone",
+    "pages/active/active"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./pages/images/home.png",
+        "selectedIconPath": "./pages/images/homeCurrent.png"
+      },
+      {
+        "pagePath": "pages/rpg/rpg",
+        "text": "RPG",
+        "iconPath": "./pages/images/rpg.png",
+        "selectedIconPath": "./pages/images/rpgCurrent.png"
+      },
+      {
+        "pagePath": "pages/yd/yd",
+        "text": "妖豆",
+        "iconPath": "./pages/images/yao.png",
+        "selectedIconPath": "./pages/images/yaoCurrent.png"
+      },
+      {
+        "pagePath": "pages/DOTA/dota",
+        "text": "DOTA",
+        "iconPath": "./pages/images/dota.png",
+        "selectedIconPath": "./pages/images/dotaCurrent.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./pages/images/my.png",
+        "selectedIconPath": "./pages/images/myCurrent.png"
+      }
+    ],
+    "backgroundColor": "#1e1e1e",
+    "color": "#fff",
+    "selectedColor": "#bb9055",
+    "position": "bottom"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

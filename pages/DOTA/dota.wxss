@@ -1,0 +1,158 @@
+.dota {
+  width: 680rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  padding-bottom: 40rpx;
+}
+
+.dota .title {
+  font-size: 30rpx;
+  color: #000;
+}
+
+.imgShow {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 auto;
+  margin-bottom: 10rpx;
+}
+
+.imgShow image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.imgInfor {
+  text-align: center;
+  margin: 20rpx 0;
+  font-size: 24rpx;
+  color: #826532;
+}
+
+.xiaohao {
+  width: 100%;
+  text-align: center;
+  font-size: 22rpx;
+  margin-bottom: 10rpx;
+  color: #000;
+}
+
+.limted {
+  width: 100%;
+  text-align: center;
+  font-size: 22rpx;
+  color: #000;
+}
+
+.lqbtn {
+  width: 140rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  text-align: center;
+  background: #ceb178;
+  border-radius: 8rpx;
+  font-size: 22rpx;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 10rpx;
+}
+
+.xian {
+  width: 100%;
+  height: 10rpx;
+  background: #eee;
+}
+
+.rpgGiftsBox {
+  width: 680rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.in_rpgGiftsBox {
+  width: 680rpx;
+  overflow: hidden;
+  zoom:1;
+  border-bottom: 1rpx dashed #eee;
+  padding-bottom:20rpx;
+  margin-bottom: 10rpx;
+}
+
+.imgProduct {
+  float: left;
+  width: 110rpx;
+  height: 110rpx;
+}
+
+.imgProduct image {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 8rpx;
+}
+
+.productInfor {
+  width: 510rpx;
+  overflow: hidden;
+  zoom: 1;
+  float: left;
+  padding-left: 20rpx;
+}
+
+.giftsName {
+  font-size: 24rpx;
+  color: #826532;
+  margin-bottom: 15rpx;
+}
+
+.shuoming {
+  font-size: 24rpx;
+  color: #b9b9b9;
+  margin-bottom: 15rpx;
+}
+
+.ljlq {
+  width: 140rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  text-align: center;
+  background: #ceb178;
+  border-radius: 8rpx;
+  font-size: 22rpx;
+  color: #fff;
+}
+
+.ylq {
+  width: 140rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  text-align: center;
+  background: #5a5c6a;
+  border-radius: 8rpx;
+  font-size: 22rpx;
+  color: #fff;
+}
+.bklq {
+  width: 140rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  text-align: center;
+  background: #5a5c6a;
+  border-radius: 8rpx;
+  font-size: 22rpx;
+  color: #fff;
+}
+
+.num {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  font-size: 24rpx;
+  color: #ccc;
+  margin-left: 15rpx;
+}
+
+.rpgGiftsBox .title {
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}

@@ -1,0 +1,9 @@
+<wxs module="dateUtil" src="../../filter.wxs"></wxs>
+<view class="newContainer">
+<view class="titleName">
+{{news_Title}}
+</view>
+<view class="name">{{item_Name}}-{{dateUtil.myDateFilter(addDate)}}</view>
+<rich-text nodes=" {{news_Content}}" class="newsBox"></rich-text>
+</view>
+

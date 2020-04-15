@@ -1,0 +1,34 @@
+.active{
+  width:680rpx;
+  margin: 0 auto;
+  padding-top: 40rpx;
+}
+.inActive{
+  width: 680rpx;
+  overflow: hidden;
+  zoom:1;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20rpx;
+  margin-bottom: 20rpx;
+}
+.inActive .activeBanner{
+  width:680rpx;
+  height: 320rpx;
+}
+
+.inActive .activeBanner image{
+  width:680rpx;
+  height: 320rpx;
+  border-radius:10rpx;
+}
+.activeTitle{
+  height:50rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+}
+.timer{
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #ccc;
+}

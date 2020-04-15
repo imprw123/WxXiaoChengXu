@@ -1,0 +1,74 @@
+<view class="swiperBox">
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap='clickTab'>最近领取</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap='clickTab'>已使用</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap='clickTab'>已失效</view>
+  </view>
+  <view class="xian"></view>
+  <view wx:if="{{currentTab == 0}}">
+    <view class="yhBox" wx:if="{{recentLQ.length != 0 && recentLQ != null}}">
+      <view class="yhqbg" wx:for="{{recentLQ}}" wx:key="{{index}}">
+        <text class="count" wx:if="item.pt == 8 || item.pt == 5 "></text>
+        <text class="saleBtn" wx:if="item.pt == 7 || item.pt == 6"></text>
+        <view class="left">
+          <p>{{'￥'+item.param1}}</p>
+        </view>
+        <view class="right">
+          <view class="wt">{{item.show_desc}}</view>
+          <view class="tm">{{item.duration_time}}</view>
+          <text class="tip">满{{'￥'+item.param2}}元可用</text>
+          <view class="title">不可叠加 请在平台结算时选择</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="yhBox" wx:if="{{recentLQ.length == 0 || recentLQ == null}}">
+      <image src="../../pages/images/nolist.jpg" class="nolist"></image>
+    </view>
+  </view>
+  <view wx:if="{{currentTab == 1}}">
+    <view wx:if="recentLQ.length != 0 && recentLQ.length != null">
+      <view wx:for="{{recentLQ}}" wx:key="{{index}}">
+        <view class="yhqbg hasUseBg">
+          <view class="countHasUse" wx:if="item.pt == 5 || item.pt == 8"></view>
+          <view class="hasSale" wx:if="item.pt == 6 || item.pt == 7"></view>
+          <div class="left">
+            <view>{{'￥'+item.param1}}</view>
+          </div>
+          <view class="right">
+            <view>{{item.show_desc}}</view>
+            <view class="tm">{{item.duration_time}}</view>
+            <text class="tip">满{{'￥'+item.param2}}元可用</text>
+            <view class="title">不可叠加 请在平台结算时选择</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="yhBox" wx:if="{{recentLQ.length == 0 || recentLQ == null}}">
+      <image src="../../pages/images/nolist.jpg" class="nolist"></image>
+    </view>
+  </view>
+  <view wx:if="{{currentTab == 2}}">
+    <view wx:if="recentLQ.length != 0 && recentLQ.length != null">
+      <view wx:for="{{recentLQ}}" wx:key="{{index}}">
+        <view class="yhqbg hasUseBg lostBg">
+          <view class="countHasUse" wx:if="item.pt == 5 || item.pt == 8"></view>
+          <view class="hasSale" wx:if="item.pt == 6 || item.pt == 7"></view>
+          <view class="left">
+            <view>{{'￥'+item.param1}}</view>
+          </view>
+          <view class="right">
+            <view>{{item.show_desc}}</view>
+            <view class="tm">{{item.duration_time}}</view>
+            <text class="tip">满{{'￥'+item.param2}}元可用</text>
+            <view class="title">不可叠加 请在平台结算时选择</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="yhBox" wx:if="{{recentLQ.length == 0 || recentLQ == null}}">
+      <image src="../../pages/images/nolist.jpg" class="nolist"></image>
+    </view>
+  </view>
+</view>

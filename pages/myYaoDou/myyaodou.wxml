@@ -1,0 +1,25 @@
+<wxs module="dateUtil" src="../../filter.wxs"></wxs>
+<view class="myYaodou">
+  <view class="myInfor">
+    <image src="{{txImg}}" class="tx"></image>
+    <view class="name">{{user_name}}</view>
+    <view class="ydNumber">
+      <text class="ydIcon"></text>
+      <text class="num">{{ yd_value }}</text> </view>
+    <view class="ydInfor">
+      <text>{{ realyYd }}</text>妖豆永久有效</view>
+  </view>
+
+  <view class="siginRecord">
+    <view class="title">此处仅显示30天的妖豆变化</view>
+    <view class="recordLists" wx:for="{{myYDlists}}" wx:key="{{index}}">
+      <text class="timer">{{dateUtil.myDateFilter(item.LogDateTime)}}</text>
+      <text class="rd"></text>
+      <view class="recordInfor">
+        <view class="cl">{{item.Amount>0? '+'+item.Amount:item.Amount}}</view>
+        <view class="cl">{{item.Desc}}</view>
+        <view>{{dateUtil.myDateFilter2(item.LogDateTime)}}</view>
+      </view>
+    </view>
+  </view>
+</view>

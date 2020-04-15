@@ -1,0 +1,82 @@
+<view class="swiperBox">
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap='clickTab'>精选</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap='clickTab'>节日</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap='clickTab'>生日</view>
+  </view>
+  <view wx:if="{{currentTab == 0}}">
+    <view class="in_rpgGiftsBox" wx:for="{{festivalFeatured}}" wx:key="{{index}}">
+      <view class="imgProduct">
+        <image src="{{item.b_img}}"></image>
+      </view>
+      <view class="productInfor">
+        <view class="giftsName">{{item.name}}</view>
+        <view class="shuoming">
+          领取条件:
+          <text wx:if="{{currentTab== 2}}">{{'生日当月可领取'}}</text>
+          <text wx:if="{{currentTab != 2}}">{{item.constraint}}</text>
+        </view>
+        <view>
+          <view class="num">
+            有效期:
+            <text>{{item.show_time}}</text>
+          </view>
+          <view class="bklq" wx:if="{{item.rcv_flg == -1}}" data-id="{{item.id}}" data-ptid="{{item.privilege_type}}" bindtap="_RcvPkg">{{item.privilege_type == 3? '不可兑换':'不可领取'}}</view>
+          <view class="ljlq" wx:if="{{item.rcv_flg == 0}}"  data-id="{{item.id}}" data-ptid="{{item.privilege_type}}" bindtap="_RcvPkg">{{item.privilege_type == 3? '立即兑换':'立即领取'}}</view>
+          <view class="ylq" wx:if="{{item.rcv_flg == 1}}">{{item.privilege_type == 3? '已兑换':'已领取'}}</view>
+          <view class="remaind">剩余:{{item.total>=0?item.total:'不限量'}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{currentTab == 1}}">
+    <view class="in_rpgGiftsBox" wx:for="{{festivalFeatured}}" wx:key="{{index}}">
+      <view class="imgProduct">
+        <image src="{{item.b_img}}"></image>
+      </view>
+      <view class="productInfor">
+        <view class="giftsName">{{item.name}}</view>
+        <view class="shuoming">
+          领取条件:
+          <text wx:if="{{currentTab== 2}}">{{'生日当月可领取'}}</text>
+          <text wx:if="{{currentTab != 2}}">{{item.constraint}}</text>
+        </view>
+        <view>
+          <view class="num">
+            有效期:
+            <text>{{item.show_time}}</text>
+          </view>
+          <view class="bklq" wx:if="{{item.rcv_flg == -1}}" data-id="{{item.id}}" data-ptid="{{item.privilege_type}}" bindtap="_RcvPkg">{{item.privilege_type == 3? '不可兑换':'不可领取'}}</view>
+          <view class="ljlq" wx:if="{{item.rcv_flg == 0}}" data-id="{{item.id}}" data-ptid="{{item.privilege_type}}" bindtap="_RcvPkg">{{item.privilege_type == 3? '立即兑换':'立即领取'}}</view>
+          <view class="ylq" wx:if="{{item.rcv_flg == 1}}">{{item.privilege_type == 3? '已兑换':'已领取'}}</view>
+           <view class="remaind">剩余:{{item.total>=0?item.total:'不限量'}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{currentTab == 2}}">
+    <view class="in_rpgGiftsBox" wx:for="{{festivalFeatured}}" wx:key="{{index}}">
+      <view class="imgProduct">
+        <image src="{{item.b_img}}"></image>
+      </view>
+      <view class="productInfor">
+        <view class="giftsName">{{item.name}}</view>
+        <view class="shuoming">
+          领取条件:
+          <text wx:if="{{currentTab== 2}}">{{'生日当月可领取'}}</text>
+          <text wx:if="{{currentTab != 2}}">{{item.constraint}}</text>
+        </view>
+        <view>
+          <view class="num">
+            有效期:
+            <text>{{item.show_time}}</text>
+          </view>
+          <view class="bklq" wx:if="{{item.rcv_flg == -1}}"  data-id="{{item.id}}" bindtap="_RcvFestivalPkg">{{item.privilege_type == 3? '不可兑换':'不可领取'}}</view>
+          <view class="ljlq" wx:if="{{item.rcv_flg == 0}}" data-id="{{item.id}}" bindtap="_RcvFestivalPkg">{{item.privilege_type == 3? '立即兑换':'立即领取'}}</view>
+          <view class="ylq" wx:if="{{item.rcv_flg == 1}}">{{item.privilege_type == 3? '已兑换':'已领取'}}</view>
+           <view class="remaind">剩余:{{item.total>=0?item.total:'不限量'}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

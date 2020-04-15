@@ -1,0 +1,66 @@
+<wxs module="dateUtil" src="../../filter.wxs"></wxs>
+<view class="swiperBox">
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap='clickTab'>普通礼包</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap='clickTab'>CDK码礼包</view>
+  </view>
+  <view class="xian"></view>
+  <view wx:if="{{currentTab == 0}}" class="giftRecordBox">
+    <view wx:if="{{giftslist.length != 0 && giftslist!= null}}">
+      <view class="lists"  wx:for="{{giftslist}}" wx:key="{{index}}">
+        <view class="giftRecordleft">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="giftRecordright">
+          <view class="ptName">{{item.show_name}}</view>
+          <view class="giftRow">
+            <text class="ttName">领取时间:</text>
+            <text class="ttContext">{{dateUtil.myDateFilter2(item.rcv_time) }}</text>
+          </view>
+          <view class="giftRow">
+            <text class="ttName">礼包内容:</text>
+            <text class="ttContext">{{item.show_desc}}</text>
+          </view>
+          <view class="giftRow">
+            <text class="ttName">使用方法:</text>
+            <text class="ttContext">领取成功后直接放入背包，请前往背包对应分类查看</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="yhBox" wx:if="{{giftslist.length == 0 || giftslist == null}}">
+      <image src="../../pages/images/nolist.jpg" class="nolist"></image>
+    </view>
+
+  </view>
+  <view wx:if="{{currentTab == 1}}" class="giftRecordBox">
+       <view wx:if="{{giftslist.length != 0 && giftslist!= null}}">
+      <view class="lists"  wx:for="{{giftslist}}" wx:key="{{index}}">
+        <view class="giftRecordleft">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="giftRecordright">
+        <view class="cdk" data-cdk="{{item.show_desc}}" bindtap="COPE">复制cdk码</view>
+          <view class="ptName">{{item.show_name}}</view>
+          <view class="giftRow">
+            <text class="ttName">领取时间:</text>
+            <text class="ttContext">{{dateUtil.myDateFilter2(item.rcv_time) }}</text>
+          </view>
+          <view class="giftRow">
+            <text class="ttName">礼包内容:</text>
+            <text class="ttContext">{{item.show_desc}}</text>
+          </view>
+          <view class="giftRow">
+            <text class="ttName">使用方法:</text>
+            <text class="ttContext">领取成功后直接放入背包，请前往背包对应分类查看</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="yhBox" wx:if="{{giftslist.length == 0 || giftslist == null}}">
+      <image src="../../pages/images/nolist.jpg" class="nolist"></image>
+    </view>
+  </view>
+</view>

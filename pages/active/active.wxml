@@ -1,0 +1,22 @@
+<view class="active">
+
+  <view class="inActive" wx:for="{{activeLists}}" wx:key="{{index}}">
+    <navigator url="/pages/newsDetail/newsDetail?News_Id={{item.show_detail}}" open-type="navigate" wx:if="{{item.privilege_type == 11}}">
+      <view class="activeBanner">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="activeTitle">{{item.show_name}}</view>
+      <view class="timer">结束时间:{{item.ed_time}}</view>
+    </navigator>
+
+
+    <navigator url="/pages/rpg/rpgDetail/rpgdetail?pt={{item.privilege_type}}&id={{item.show_detail}}" open-type="navigate" wx:if="{{item.privilege_type == 1 || item.privilege_type == 2 || item.privilege_type == 3}}">
+      <view class="activeBanner">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="activeTitle">{{item.show_name}}</view>
+      <view class="timer">结束时间:{{item.ed_time}}</view>
+    </navigator>
+  </view>
+
+</view>

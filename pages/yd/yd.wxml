@@ -1,0 +1,40 @@
+<view class="ydHd">
+  <view class="ydnumber">{{yd}}</view>
+  <view class="sign" wx:if="{{!today_signed}}" bindtap="_Sign">签到</view>
+   <view class="haSsign" wx:if="{{today_signed}}">已签到</view>
+  <view class="tip">签可获得K值及妖豆，连续签到有惊喜哦</view>
+</view>
+<view class="tabBox">
+  <view class="tab">
+    <view>{{yd_yestoday_get}}</view>
+    <view>昨日获得妖豆</view>
+    <text class="xian"></text>
+  </view>
+  <view class="tab">
+    <view>{{yd_yestoday_use}}</view>
+    <view>昨日消耗妖豆</view>
+    <text class="xian"></text>
+  </view>
+  <view class="tab">
+    <view>{{yd_expired}}</view>
+    <view>即将过期的妖豆</view>
+  </view>
+</view>
+
+<view class="quanBox">
+  <view class="sale" bindtap="errorTip">
+    <image src="../images/zhekou.png"></image>
+  </view>
+  <view class="mj" bindtap="errorTip">
+    <image src="../images/manjian.png"></image>
+  </view>
+</view>
+
+<view class="quanBox">
+  <view class="td" bindtap="errorTip">
+    <image src="../images/tdproduct.png"></image>
+  </view>
+  <view class="qd" bindtap="errorTip">
+    <image src="../images/jqqd.png"></image>
+  </view>
+</view>

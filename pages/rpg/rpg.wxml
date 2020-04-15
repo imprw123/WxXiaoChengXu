@@ -1,0 +1,45 @@
+<view class="rpgContainer">
+  <view class="box">
+    <view class="rpgTitle">
+      今日推荐
+    </view>
+    <view class="inRpgList">
+      <navigator wx:if="{{todayRecommand != null}}">
+        <image src="{{todayRecommand == null ? '../../pages/images/guanggao.png':todayRecommand.b_img}}" class="adcanceBanner"></image>
+      </navigator>
+      <block wx:for="{{todayLsts}}" wx:key="{{index}}">
+        <navigator url="/pages/rpg/rpgDetail/rpgdetail?pt={{item.privilege_type}}&id={{item.id}}" open-type="navigate">
+          <view class="rpgMapList">
+            <image src="{{item.b_img}}" class="mapImg"></image>
+            <view class="mapInfor">
+              <view class="mapName">{{item.name}}</view>
+              <view class="typeName"> {{item.desc}}</view>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="rpgTitle">
+      本周热门
+    </view>
+    <view class="inRpgList">
+      <navigator wx:if="{{weekRecomannd != null}}">
+        <image src="{{weekRecomannd == null ? '../../pages/images/guanggao.png':weekRecomannd.b_img}}" class="adcanceBanner"></image>
+      </navigator>
+      <block wx:for="{{weekLsts}}" wx:key="{{index}}">
+        <navigator url="/pages/rpg/rpgDetail/rpgdetail?pt={{item.privilege_type}}&id={{item.id}}" open-type="navigate">
+          <view class="rpgMapList">
+            <image src="{{item.b_img}}" class="mapImg"></image>
+            <view class="mapInfor">
+              <view class="mapName">{{item.name}}</view>
+              <view class="typeName"> {{item.desc}} </view>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</view>
