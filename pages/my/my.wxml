@@ -9,7 +9,7 @@
           <image src="../images/notleve0.png" wx:if="{{k_level > 0}}" class="leveBg"></image>
           <image src="{{icon}}" class="tx"></image>
         </view>
-        <view class="name">{{user_name}}</view>
+        <view class="name">{{userName}}</view>
         <view class="leveBox">
           <view class="leve01" wx:if="{{k_level == 1}}">
             <image src="../images/1.png"></image>

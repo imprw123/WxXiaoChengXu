@@ -49,5 +49,13 @@ Page({
       }
     })
   
+  },
+  onShareAppMessage: function (res) {
+    return {
+      title: '新闻详情', //转发的标题。当前小程序名称
+      path: 'pages/newsDetail/newsDetail?News_Id= ' + this.data.newsId+' ', //转发的路径
+      imageUrl: 'https://img.5211game.com/Base/bg/kinglg.jpg',//自定义图片路径 支持PNG及JPG。显示图片长宽比是 5:4。
+    }
   }
+  
 })

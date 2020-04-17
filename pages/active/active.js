@@ -29,5 +29,12 @@ Page({
     }).catch(error => {
       console.log(error);
     })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '热门活动', //转发的标题。当前小程序名称
+      path: 'pages/active/active', //转发的路径
+      imageUrl: 'https://img.5211game.com/Base/bg/kinglg.jpg',//自定义图片路径 支持PNG及JPG。显示图片长宽比是 5:4。
+    }
   }
 })
