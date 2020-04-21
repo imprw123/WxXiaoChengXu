@@ -17,6 +17,15 @@
       <view class="activeTitle">{{item.show_name}}</view>
       <view class="timer">结束时间:{{item.ed_time}}</view>
     </navigator>
+
+    <navigator url="javascript:;"  wx:if="{{item.privilege_type == 10}}">
+      <view class="activeBanner">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="activeTitle">{{item.show_name}}</view>
+      <view class="timer">结束时间:{{item.ed_time}}</view>
+      <view style="font-size:26rpx;color:#ccc;">活动详情地址: <input type="text" disabled="true" value="{{item.show_detail}}"></input>(请在web浏览器中打开)</view>
+    </navigator>
   </view>
 
 </view>

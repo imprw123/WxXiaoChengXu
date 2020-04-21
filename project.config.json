@@ -72,6 +72,13 @@
 					"id": -1,
 					"name": "pages/rpg/Gifts/gifts",
 					"pathName": "pages/rpg/Gifts/gifts",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/active/active",
+					"pathName": "pages/active/active",
 					"scene": null
 				}
 			]

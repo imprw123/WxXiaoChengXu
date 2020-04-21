@@ -6,7 +6,7 @@ Page({
     currentTab: 0,
     sp:601,
     pageIndex:1,
-    pageSize:5,
+    pageSize:9999,
     festivalFeatured:[]
   },
   onLoad: function (options) {

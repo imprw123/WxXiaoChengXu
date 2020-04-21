@@ -24,7 +24,7 @@
           <view class="bklq" wx:if="{{item.rcv_flg == -1}}" data-id="{{item.id}}" data-ptid="{{item.privilege_type}}" bindtap="_RcvPkg">{{item.privilege_type == 3? '不可兑换':'不可领取'}}</view>
           <view class="ljlq" wx:if="{{item.rcv_flg == 0}}"  data-id="{{item.id}}" data-ptid="{{item.privilege_type}}" bindtap="_RcvPkg">{{item.privilege_type == 3? '立即兑换':'立即领取'}}</view>
           <view class="ylq" wx:if="{{item.rcv_flg == 1}}">{{item.privilege_type == 3? '已兑换':'已领取'}}</view>
-          <view class="remaind">剩余:{{item.total>=0?item.total:'不限量'}}</view>
+          <view class="remaind">剩余:{{item.remain>=0?item.remain:'不限量'}}</view>
         </view>
       </view>
     </view>
@@ -49,7 +49,7 @@
           <view class="bklq" wx:if="{{item.rcv_flg == -1}}" data-id="{{item.id}}" data-ptid="{{item.privilege_type}}" bindtap="_RcvPkg">{{item.privilege_type == 3? '不可兑换':'不可领取'}}</view>
           <view class="ljlq" wx:if="{{item.rcv_flg == 0}}" data-id="{{item.id}}" data-ptid="{{item.privilege_type}}" bindtap="_RcvPkg">{{item.privilege_type == 3? '立即兑换':'立即领取'}}</view>
           <view class="ylq" wx:if="{{item.rcv_flg == 1}}">{{item.privilege_type == 3? '已兑换':'已领取'}}</view>
-           <view class="remaind">剩余:{{item.total>=0?item.total:'不限量'}}</view>
+           <view class="remaind">剩余:{{item.remain>=0?item.remain:'不限量'}}</view>
         </view>
       </view>
     </view>
@@ -74,7 +74,7 @@
           <view class="bklq" wx:if="{{item.rcv_flg == -1}}"  data-id="{{item.id}}" bindtap="_RcvFestivalPkg">{{item.privilege_type == 3? '不可兑换':'不可领取'}}</view>
           <view class="ljlq" wx:if="{{item.rcv_flg == 0}}" data-id="{{item.id}}" bindtap="_RcvFestivalPkg">{{item.privilege_type == 3? '立即兑换':'立即领取'}}</view>
           <view class="ylq" wx:if="{{item.rcv_flg == 1}}">{{item.privilege_type == 3? '已兑换':'已领取'}}</view>
-           <view class="remaind">剩余:{{item.total>=0?item.total:'不限量'}}</view>
+           <view class="remaind">剩余:{{item.remain>=0?item.remain:'不限量'}}</view>
         </view>
       </view>
     </view>

@@ -1,6 +1,6 @@
 <view class="rpgGiftsBox">
   <block wx:for="{{giftslists}}" wx:key="{{index}}">
-    <navigator url="/pages/rpg/rpgDetail/rpgdetail?pt={{item.privilege_type}}&id={{item.id}}" open-type="navigate">
+    <navigator url="/pages/rpg/rpgDetail/rpgdetail?pt={{item.privilege_type}}&id={{item.M_ITEM.id}}" open-type="navigate">
       <view class="in_rpgGiftsBox">
         <view class="imgProduct">
           <image src="{{item.M_ITEM.b_img}}"></image>
@@ -14,7 +14,7 @@
 
             <view class="ylq" wx:if="{{item.M_ITEM.rcv_flg == 1}}">{{item.M_ITEM.privilege_type == 3? '已兑换':'已领取'}}</view>
             <view class="num">
-              <text>{{item.M_ITEM.total >=0 ? item.M_ITEM.total:'不限量'}}</text>
+              <text>剩余:{{item.M_ITEM.remain >=0 ? item.M_ITEM.remain:'不限量'}}</text>
             </view>
           </view>
         </view>

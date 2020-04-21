@@ -3,7 +3,7 @@
   <view class="inMyBox">
     <view class="inMyBoxMain">
       <view class="inload" wx:if="{{islogin}}">
-      <text class="exit" bindtap="exit">退出</text>
+        <text class="exit" bindtap="exit">退出</text>
         <view class="useTx">
           <image src="../images/leve0.png" wx:if="{{k_level == 0}}" class="leveBg"></image>
           <image src="../images/notleve0.png" wx:if="{{k_level > 0}}" class="leveBg"></image>
@@ -36,13 +36,16 @@
         <button bindtap="login">登录</button>
       </view>
       <!-- 日期选择器 -->
-      <view class="tui-picker-content" wx:if="{{birthday == '' || birthday == null && islogin}}">
-        <picker mode="date" value="{{date}}" start="1949-10-01" end="2020-10-01" bindchange="changeDate">
+      <view wx:if="{{islogin}}">
+        <view class="tui-picker-content" wx:if="{{birthday == '' || birthday == null}}">
+          <picker mode="date" value="{{date}}" start="1949-10-01" end="2020-10-01" bindchange="changeDate">
 
-          <view class="tui-picker-detail">
-            <text class="birthday"></text> 设置我的生日: {{date}}
-          </view>
-        </picker>
+            <view class="tui-picker-detail">
+              <text class="birthday"></text> 设置我的生日: {{date}}
+            </view>
+          </picker>
+        </view>
+
       </view>
 
       <view class="tui-picker-content" wx:if="{{birthday !='' && birthday !=null && islogin}}">

@@ -16,10 +16,11 @@
   margin-bottom: 20rpx;
 }
 .rpgMapList{
-  height: 110rpx;
   width:680rpx;
   margin: 0 auto;
   margin-bottom: 30rpx;
+  overflow: hidden;
+  zoom:1;
 }
 .mapImg{
   width:110rpx;
@@ -29,10 +30,12 @@
 }
 .mapInfor{
   width:550rpx;
-  height: 108rpx;
    float: left;
    border-bottom: 2rpx dashed #eeeeee;
    padding-left: 20rpx;
+   overflow: hidden;
+   zoom:1;
+   padding-bottom: 10rpx;
 }
 .mapInfor .mapName{
   font-size:28rpx;
